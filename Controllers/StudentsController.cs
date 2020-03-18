@@ -48,15 +48,14 @@ namespace Cw3.Controllers
         [HttpPut("{id}")]
         public IActionResult PutStudent(int id)
         {
-            // student.IndexNumber = $"s{new Random().Next(1, 2000)}";
-            return Ok("Aktualizacja ukończona");
+            return Ok($"Aktualizacja studenta o id = {id} ukończona");
         }
 
         [HttpDelete("{id}")]
         public IActionResult DeleteStudent(int id)
         {
 
-            return Ok("Usuwanie dokończone");
+            return Ok($"Usuwanie dokończone, usunięto studenta o id = {id}");
         }
 
     }
